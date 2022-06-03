@@ -235,7 +235,7 @@ theme.setup = function(cfg)
     -- TSParameterReference= { };    -- For references to parameters of a function.
     TSProperty = { fg = c.cyan0 }, -- Same as `TSField`.
     TSPunctDelimiter = { fg = c.fg0 }, -- For delimiters ie: `.`
-    TSPunctBracket = { fg = c.fg_dark }, -- For brackets and parens.
+    TSPunctBracket = { fg = c.gf_light }, -- For brackets and parens.
     TSPunctSpecial = { fg = c.fg0 }, -- For special punctutation that does not fall in the catagories before.
     -- TSRepeat            = { };    -- For keywords related to loops.
     -- TSString            = { };    -- For strings.
@@ -248,7 +248,7 @@ theme.setup = function(cfg)
     TSVariableBuiltin = { fg = c.yellow1 }, -- Variable names that are defined by the languages, like `this` or `self`.
     TSTag = { fg = c.red1 }, -- Tags like html tag names.
     TSTagAttribute = { fg = c.orange0 },
-    TSTagDelimiter      = { fg = c.fg_dark };    -- Tag delimiter like `<` `>` `/`
+    TSTagDelimiter      = { fg = c.fg_light };    -- Tag delimiter like `<` `>` `/`
     -- TSText              = { };    -- For strings considered text in a markup language.
     -- TSEmphasis          = { };    -- For text to be represented with emphasis.
     -- TSUnderline         = { };    -- For text to be represented with an underline.
