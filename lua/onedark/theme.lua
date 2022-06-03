@@ -248,7 +248,7 @@ theme.setup = function(cfg)
     TSVariableBuiltin = { fg = c.yellow1 }, -- Variable names that are defined by the languages, like `this` or `self`.
     TSTag = { fg = c.red1 }, -- Tags like html tag names.
     TSTagAttribute = { fg = c.orange0 },
-    -- TSTagDelimiter      = { };    -- Tag delimiter like `<` `>` `/`
+    TSTagDelimiter      = { fg = c.fg_dark };    -- Tag delimiter like `<` `>` `/`
     -- TSText              = { };    -- For strings considered text in a markup language.
     -- TSEmphasis          = { };    -- For text to be represented with emphasis.
     -- TSUnderline         = { };    -- For text to be represented with an underline.
