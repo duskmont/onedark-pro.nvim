@@ -208,48 +208,73 @@ theme.setup = function(cfg)
     -- TSCharacter         = { };    -- For characters.
     -- TSComment           = { };    -- For comment blocks.
     TSNote = { fg = c.bg0, bg = c.info },
+    ["@note"] = { fg = c.bg0, bg = c.info },
     TSWarning = { fg = c.bg0, bg = c.warning },
+    ["@warning"] = { fg = c.bg0, bg = c.warning },
     TSDanger = { fg = c.bg0, bg = c.error },
+    ["@danger"] = { fg = c.bg0, bg = c.error },
     TSConstructor = { fg = c.red1 }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
+    ["@constructor"] = { fg = c.red1 }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
     -- TSConditional       = { };    -- For keywords related to conditionnals.
     TSConstant = { fg = c.yellow1 }, -- For constants
+    ["@constant"] = { fg = c.yellow1 }, -- For constants
     -- TSConstBuiltin      = { };    -- For constant that are built in the language: `nil` in Lua.
     -- TSConstMacro        = { };    -- For constants that are defined by macros: `NULL` in C.
     -- TSError             = { };    -- For syntax/parser errors.
     -- TSException         = { };    -- For exception related keywords.
     TSField = { fg = c.cyan0 }, -- For fields.
+    ["@field"] = { fg = c.cyan0 }, -- For fields.
     -- TSFloat             = { };    -- For floats.
     -- TSFunction          = { };    -- For function (calls and definitions).
     -- TSFuncBuiltin       = { };    -- For builtin functions: `table.insert` in Lua.
     -- TSFuncMacro         = { };    -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
     TSInclude = { fg = c.purple0 }, -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
+    ["@include"] = { fg = c.purple0 }, -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
     TSKeyword = { fg = c.purple0, style = cfg.keyword_style }, -- For keywords that don't fall in previous categories.
+    ["@keyword"] = { fg = c.purple0, style = cfg.keyword_style }, -- For keywords that don't fall in previous categories.
     TSKeywordFunction = { fg = c.purple0, style = cfg.function_style }, -- For keywords used to define a fuction.
+    ["@keyword.function"] = { fg = c.purple0, style = cfg.function_style }, -- For keywords used to define a fuction.
     TSLabel = { fg = c.blue0 }, -- For labels: `label:` in C and `:label:` in Lua.
+    ["@label"] = { fg = c.blue0 }, -- For labels: `label:` in C and `:label:` in Lua.
     jsonTSLabel = { fg = c.red0 }, -- For labels: `label:` in C and `:label:` in Lua.
+    ["@label.json"] = { fg = c.red0 }, -- For labels: `label:` in C and `:label:` in Lua.
     -- TSMethod            = { };    -- For method calls and definitions.
     TSNamespace = { fg = c.red1 }, -- For identifiers referring to modules and namespaces.
+    ["@namespace"] = { fg = c.red1 }, -- For identifiers referring to modules and namespaces.
     -- TSNone              = { };    -- TODO: docs
     -- TSNumber            = { };    -- For all numbers
     TSOperator = { fg = c.cyan0 }, -- For any operator: `+`, but also `->` and `*` in C.
+    ["@operator"] = { fg = c.cyan0 }, -- For any operator: `+`, but also `->` and `*` in C.
     TSParameter = { fg = c.red1 }, -- For parameters of a function.
+    ["@parameter"] = { fg = c.red1 }, -- For parameters of a function.
     -- TSParameterReference= { };    -- For references to parameters of a function.
     TSProperty = { fg = c.cyan0 }, -- Same as `TSField`.
+    ["@property"] = { fg = c.cyan0 }, -- Same as `TSField`.
     TSPunctDelimiter = { fg = c.fg0 }, -- For delimiters ie: `.`
+    ["@punctuation.delimiter"] = { fg = c.fg0 }, -- For delimiters ie: `.`
     TSPunctBracket = { fg = c.gf_light }, -- For brackets and parens.
+    ["@punctuation.bracket"] = { fg = c.gf_light }, -- For brackets and parens.
     TSPunctSpecial = { fg = c.fg0 }, -- For special punctutation that does not fall in the catagories before.
+    ["@punctuation.special"] = { fg = c.fg0 }, -- For special punctutation that does not fall in the catagories before.
     -- TSRepeat            = { };    -- For keywords related to loops.
     -- TSString            = { };    -- For strings.
     TSStringRegex = { fg = c.orange1 }, -- For regexes.
+    ["@string.regex"] = { fg = c.orange1 }, -- For regexes.
     TSStringEscape = { fg = c.red1 }, -- For escape characters within a string.
+    ["@string.escape"] = { fg = c.red1 }, -- For escape characters within a string.
     -- TSSymbol            = { };    -- For identifiers referring to symbols or atoms.
     -- TSType              = { };    -- For types.
     -- TSTypeBuiltin       = { };    -- For builtin types.
     TSVariable = { fg = c.red0, style = cfg.variable_style }, -- Any variable name that does not have another highlight.
+    ["@variable"] = { fg = c.red0, style = cfg.variable_style }, -- Any variable name that does not have another highlight.
     TSVariableBuiltin = { fg = c.yellow1 }, -- Variable names that are defined by the languages, like `this` or `self`.
+    ["@variable.builtin"] = { fg = c.yellow1 }, -- Variable names that are defined by the languages, like `this` or `self`.
     TSTag = { fg = c.red1 }, -- Tags like html tag names.
+    ["@tag"] = { fg = c.red1 }, -- Tags like html tag names.
     TSTagAttribute = { fg = c.orange0 },
+    ["@tag.attribute"] = { fg = c.orange0 },
     TSTagDelimiter      = { fg = c.fg_light };    -- Tag delimiter like `<` `>` `/`
+    ["@tag.delimiter"]      = { fg = c.fg_light };    -- Tag delimiter like `<` `>` `/`
     -- TSText              = { };    -- For strings considered text in a markup language.
     -- TSEmphasis          = { };    -- For text to be represented with emphasis.
     -- TSUnderline         = { };    -- For text to be represented with an underline.
@@ -278,11 +303,17 @@ theme.setup = function(cfg)
 
     -- markdown
     TSURI = { fg = c.blue0, style = Styles.Underline },
+    ["@text.uri"] = { fg = c.blue0, style = Styles.Underline },
     TSLiteral = { fg = c.red1 },
+    ["@text.literal"] = { fg = c.red1 },
     TSTextReference = { fg = c.blue0 },
+    ["@text.reference"] = { fg = c.blue0 },
     TSTitle = { fg = c.red1, style = Styles.Bold },
+    ["@text.title"] = { fg = c.red1, style = Styles.Bold },
     TSEmphasis = { style = Styles.Italic },
+    ["@text.emphasis"] = { style = Styles.Italic },
     TSStrong = { style = Styles.Bold },
+    ["@text.strong"] = { style = Styles.Bold },
 
     -- php
     phpTSPunctBracket = { fg = c.red0 },
